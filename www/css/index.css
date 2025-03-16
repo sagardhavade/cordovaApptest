@@ -39,7 +39,7 @@ body {
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    /* background:url(../img/logo.png) no-repeat center top; 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
     top:50%;
@@ -107,4 +107,133 @@ h1 {
     body {
         background-image:linear-gradient(to bottom, #585858 0%, #1B1B1B 51%);
     }
+}
+
+
+
+/* css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .form_field {
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+  }
+  
+  #cashInBtn {
+    background-color: #28a745; /* Green */
+    color: white;
+  }
+  
+  #cashInBtn:hover {
+    background-color: #218838;
+  }
+  
+  #cashOutBtn {
+    background-color: #dc3545; /* Red */
+    color: white;
+  }
+  
+  #cashOutBtn:hover {
+    background-color: #c82333;
+  }
+  #cashOutTotal{
+    color: #dc3545; /* Red */
+  }
+  #cashInTotal{
+    color:  #28a745; /* Green */;
+  }
+  .total {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .transactions {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  /* .transaction-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+   */
+   .transaction-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .transaction-time {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .small-btn {
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .transaction-buttons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  /* .small-btn {
+    font-size: 12px;
+    padding: 5px 8px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  } */
+  
+  .small-btn:hover {
+    background: #0056b3;
+  }
+  
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    gap: 10px; /* Space between logo and text */
+    text-align: center; /* Ensure text alignment */
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Add some spacing */
+}
+
+.logo {
+    width: 100px; /* Adjust the size of the logo */
+    height: auto;
 }
