@@ -72,6 +72,10 @@ document.addEventListener("DOMContentLoaded", function () {
         transactions.push(transaction);
         renderTransactions();
         updateMonthFilter();
+
+         // ✅ Clear input fields after adding a transaction
+    titleInput.value = "";
+    amountInput.value = "";
     }
 
     function renderTransactions() {
